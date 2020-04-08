@@ -1,16 +1,21 @@
-# lorefinder_ffxiv
+# ffxiv-keeper-of-knowledge
 
-A new Flutter project.
+A simple lorefinder for FFXIV working with XIVAPI, built with Flutter Web. Work in progress!
 
-## Getting Started
+## Run the application
 
-This project is a starting point for a Flutter application.
+Assuming Flutter is already installed, you need to use latest version from the Beta channel, and to enable web support.
+```
+$ flutter channel beta
+$ flutter upgrade
+$ flutter config --enable-web
+```
+You can then run the application from localhost, it only works with Google Chrome at the moment.
+```
+$ flutter run -d chrome
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Hosting
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Currently hosted with Firebase :
+https://ffxiv-moogle-lorefinder.web.app/
