@@ -37,7 +37,8 @@ class ResultsDisplayState extends State<ResultsDisplay> {
             future: futureSearchResults,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                
+                if (snapshot.data.results.isEmpty)
+                  return SelectableText("Aucun résultat :(", style: TextStyle(color: Colors.grey[200], fontSize: 25));               
                 return ResultsListView(searchResults : snapshot.data.results);
               } else if (snapshot.hasError) {
                 return SelectableText("${snapshot.error}", style: TextStyle(color: Colors.red, fontSize: 14));
