@@ -14,8 +14,3 @@ You can then run the application from localhost, it only works with Google Chrom
 ```
 $ flutter run -d chrome
 ```
-
-## Hosting
-
-Currently hosted with Firebase :
-https://ffxiv-moogle-lorefinder.web.app/
